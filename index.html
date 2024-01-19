@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARSH's</title>
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar h-nav-resp ">
+        <div class="mylogo">HARSH</div>
+        <ul class="nav-list v-class-resp">
+            <li id="item"><a href="#home">home</a></li>
+            <li id="item"><a href="#about">about</a></li>
+            <li id="item"><a href="#skills">skills</a></li>
+            <li id="item"><a href="#projects">projects</a></li>
+            <li id="item"><a href="#contact">contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+
+        <div class="container">
+            <h1>I am HARSH PAGADA</h1>
+            <p>I am a Web Developer /a Designer /and Front End Developer From India .I create beautiful & functional
+                websites for small buisnesses. </p>
+
+            <div class="logo">
+                <a href="https://www.instagram.com/harshpatel9916/" target="_blank"><img src="/images/instagram.png" alt="logo"></a>
+                <a href="https://www.linkedin.com/in/harsh-pagada-10898a251/" target="_blank"><img src="/images/linkdin.png" alt="logo"></a>
+            </div>
+        </div>
+        <!-- <div class="arrow">
+            <a href="#contact"><img src="/images/down.png" alt="logo"></a>
+        </div> -->
+    </section>
+
+    <!-- about -->
+
+    <section class="about" id="about">
+        <div class="myphoto">
+            <img src="/images/IMG_20230525_173701 (1).png" alt="">
+        </div>
+        <div class="text">
+            <h2>About Me</h2>
+            <p>My name is Harsh, I'm a Web Designer & Front End Developer. <br> Currently I am working on practice
+                projects and college projects.<br> I develope all kind of websites.</p>
+            <h3>Contact Details</h3>
+            <h5>Harsh Pagada <br> Gujarat <br> India</h5>
+            <h4>harshpagada@gmail.com</h4>
+            <a href="/images/resume 2023.pdf" target="_blank"><button id="btn">Download Resume</button></a>
+        </div>
+    </section>
+
+    <!-- skills -->
+
+    <section class="skills" id="skills">
+        <h1>my skills</h1>
+
+        <div class="gallery">
+
+            <div class="wrapper">
+                <div class="card">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box html"><span>85%</span></div>
+                    </div>
+                    <div class="name">HTML</div>
+                </div>
+
+                <div class="card css">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box css"><span>80%</span></div>
+                    </div>
+                    <div class="name">CSS</div>
+                </div>
+
+                <div class="card js">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box js"><span>70%</span></div>
+                    </div>
+                    <div class="name">JavaScript</div>
+                </div>
+
+                <div class="card bt">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span>85%</span></div>
+                    </div>
+                    <div class="name">Bootstrap</div>
+                </div>
+
+                <div class="card mu">
+                    <div class="circle">
+                        <div class="bar"></div>
+                        <div class="box"><span>85%</span></div>
+                    </div>
+                    <div class="name">Material-UI</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <h1 class="h1">Project's</h1>
+
+    <!-- projects -->
+    <section class="projects" id="projects">
+        <div class="gallary">
+            <a href="https://hpdesign.netlify.app/" target="_blank"><img src="/images/Screenshot (1).png" alt=""></a>
+            <p>Design Your House</p>
+        </div>
+        </div>
+
+        <div class="gallary">
+            <a href="https://hplandingpage.netlify.app/" target="_blank"><img src="/images/Screenshot(4).png" alt=""></a>
+            <p>Landing Page</p>
+        </div>
+
+        <div class="gallary">
+            <a href="https://hpfoodzone.netlify.app/" target="_blank"><img src="/images/Screenshot (2).png" alt=""></a>
+            <p>FoodZone</p>
+        </div>
+
+        <div class="gallary">
+            <a href="https://hpcalculator.netlify.app/" target="_blank"><img src="/images/Screenshot (3).png" alt=""></a>
+            <p>Calculator</p>
+        </div>
+    </section>
+
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+        <div class="message"><img src="/images/icons8-send-50.png" alt="logo"></div>
+
+        <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+            <script type="text/javascript">
+                function ValidateForm(frm) {
+                    if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+                    if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                    if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                    if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+                    return true;
+                }
+            </script>
+            <table style="width:100%;" cellpadding="8" cellspacing="0">
+                <tr>
+                    <td>
+                        <!-- <label for="Name">Name*:</label> -->
+                    </td>
+                    <td>
+                        <input name="Name" placeholder="*Enter Your Name" type="text"
+                            style="text-align: center;display: block;width: 300px;height: 40px;padding: 1px;color: white;border: 2px solid black;background-color: black;margin: 11px auto;font-size: 25px;font-family: 'Bree Serif',serif;outline: none;box-shadow: 0 0 5px black;" />
+                        <!-- </td> </tr> <tr> <td> -->
+                        <!-- </td> <td> -->
+                        <input name="Subject" placeholder="Enter Your Subject" type="text"
+                            style="text-align: center;display: block;width: 300px;height: 40px;padding: 1px;color: white;border: 2px solid black;background-color: black;margin: 5px auto;font-size: 25px;font-family: 'Bree Serif',serif;outline: none;box-shadow: 0 0 5px black;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input name="EmailAddress" placeholder="*Enter Your Email address" type="text"
+                            style=" text-align: center;display: block;width: 300px;height: 40px;padding: 1px;color: white;border: 2px solid black;background-color: black;margin: 5px auto;font-size: 25px;font-family: 'Bree Serif',serif;outline: none;box-shadow: 0 0 5px black;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input name="Message" placeholder="Enter Your Message"
+                            style=" text-align: center;display: block;width: 300px;height: 40px;padding: 1px;color: white;border: 2px solid black;background-color: black;margin: 5px auto;font-size: 25px;font-family: 'Bree Serif',serif;outline: none;box-shadow: 0 0 5px black;"></input>
+                        <div style="text-align: center; opacity: 0;"><a href="https://www.100forms.com" id="lnk100"
+                                title="form to email">Thank you</a></div>
+                        <input id="hello" name="Submit" type="submit" value="Submit"
+                            style="display: block;width: 121px;margin: -12px auto;font-size: 25px;background-color: black;color: white;box-shadow: 0 0 5px black;font-family:  'Bree Serif',serif;cursor: pointer; " />
+                        <script src="https://www.100forms.com/js/FORMKEY:4G93LQEYYLQB" type="text/javascript"></script>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <section class="footer">
+        <div class="uparrow">
+            <a href="#home"><img src="/images/up arrow.png" alt="logo"></a>
+        </div>
+        <div class="copy">
+          <p> &copy; Created By Harsh Pagada 2022!</p>
+        </div>
+    </section>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
